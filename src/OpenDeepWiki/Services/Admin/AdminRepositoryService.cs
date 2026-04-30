@@ -152,7 +152,7 @@ public class AdminRepositoryService : IAdminRepositoryService
         return true;
     }
 
-    private async Task ClearRepositoryReferencesAsync(IReadOnlyCollection<string> repositoryIds)
+    private async Task DeleteRepositoryDataAsync(IReadOnlyCollection<string> repositoryIds)
     {
         if (repositoryIds.Count == 0)
         {
